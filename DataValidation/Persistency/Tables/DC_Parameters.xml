@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>DC_Parameters</Name>
+  <Parent />
+  <Previous />
+  <LastModifiedBy>ClareStone</LastModifiedBy>
+  <LastModifiedOn>2025-02-27T16:04:27.3204282+00:00</LastModifiedOn>
+  <CreatedBy>ClareStone</CreatedBy>
+  <CreatedOn>2025-02-27T16:04:27.3204282+00:00</CreatedOn>
+  <Folder>false</Folder>
+  <LastModified>2025-02-27T16:04:27.3204282+00:00</LastModified>
+  <Notes />
+  <IsExpanded>true</IsExpanded>
+  <IsProjectTable>true</IsProjectTable>
+  <IsDataSource>false</IsDataSource>
+  <IsODBCSource>false</IsODBCSource>
+  <IsWebDataSource>false</IsWebDataSource>
+  <IsDatFileSource>false</IsDatFileSource>
+  <IsDatabaseConnection>false</IsDatabaseConnection>
+  <WebDataSourceIsAdvanced>false</WebDataSourceIsAdvanced>
+  <FilePath>Tables\Parameters.xlsx</FilePath>
+  <Schema />
+  <Reference>Parameters</Reference>
+  <Delimiter>	</Delimiter>
+  <Internal>false</Internal>
+  <LookUpType>RowAndCol</LookUpType>
+  <BasisTable>true</BasisTable>
+  <LookUpVars>ParamVal</LookUpVars>
+  <IndexCols>1</IndexCols>
+  <DoubleType>true</DoubleType>
+  <Rows>1</Rows>
+  <Cols>1</Cols>
+  <HasHeadings>true</HasHeadings>
+  <DatFileProps>PricingTask_PremLed_Service:False;True;True;;True, PricingTask_PremLed:False;True;True;;True</DatFileProps>
+  <RunControlTable>false</RunControlTable>
+</Table>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>DataValidation</Name>
+  <LastModifiedBy>ClareStone</LastModifiedBy>
+  <LastModifiedOn xsi:nil="true" />
+  <CreatedOn xsi:nil="true" />
+  <Folder>false</Folder>
+  <LastModified>2025-02-25T16:14:20.432474+00:00</LastModified>
+  <Notes />
+  <IsExpanded>true</IsExpanded>
+  <CreateDate>2025-02-20T15:49:49.445522+00:00</CreateDate>
+  <UserId>ClareStone</UserId>
+  <AppVersion>6000</AppVersion>
+  <VersionNo>1.000</VersionNo>
+  <CompanyName />
+  <Logo />
+  <Documentation />
+  <DocumentationBackedUp>false</DocumentationBackedUp>
+  <CommitDate>0001-01-01T00:00:00</CommitDate>
+  <References />
+  <ExternalSourceControl>true</ExternalSourceControl>
+  <DisableLastModified>true</DisableLastModified>
+  <RevisionIds />
+  <OpenAsReadOnly>false</OpenAsReadOnly>
+</Project>
