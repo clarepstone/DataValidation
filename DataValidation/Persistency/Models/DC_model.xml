@@ -4,44 +4,28 @@
   <Parent />
   <Previous>DV_model</Previous>
   <LastModifiedBy>ClareStone</LastModifiedBy>
-  <LastModifiedOn>2025-03-07T12:00:28.453265+00:00</LastModifiedOn>
+  <LastModifiedOn>2025-03-10T15:03:16.6049036+00:00</LastModifiedOn>
   <CreatedBy>ClareStone</CreatedBy>
-  <CreatedOn>2025-02-28T10:41:31.6545833+00:00</CreatedOn>
+  <CreatedOn>2025-03-10T15:03:16.6049036+00:00</CreatedOn>
   <Folder>false</Folder>
-  <LastModified>2025-03-07T12:00:28.453265+00:00</LastModified>
+  <LastModified>2025-03-10T15:03:16.6049036+00:00</LastModified>
   <Notes />
   <IsExpanded>true</IsExpanded>
+  <Description>Model to convert inputs to be used in valuation and pricing model for conventional products</Description>
   <Inherit>false</Inherit>
   <Declarations />
   <UseDefaultExecuteCode>false</UseDefaultExecuteCode>
   <Inputs>
     <Input>
-      <Name>BenType</Name>
-      <Parent>Benefit</Parent>
-      <Previous />
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6645849+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes>Benefit LEVEL or DECR over lifetime of policy (DECR applicable to Product = TERM only)</Notes>
-      <IsExpanded>true</IsExpanded>
-      <DataType>String</DataType>
-      <Value>LEVEL</Value>
-      <Format />
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-      <AllowNulls>false</AllowNulls>
-    </Input>
-    <Input>
       <Name>Benefit</Name>
       <Parent />
       <Previous>Premium</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6049036+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.665584+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6049036+00:00</CreatedOn>
       <Folder>true</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6049036+00:00</LastModified>
       <Notes>Inputs related to benefits under policy</Notes>
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
@@ -52,14 +36,34 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>DOB1</Name>
+      <Name>DC_BenType</Name>
+      <Parent>Benefit</Parent>
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6049036+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6049036+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6049036+00:00</LastModified>
+      <Notes>Benefit LEVEL or DECR over lifetime of policy (DECR applicable to Product = TERM only)</Notes>
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>LEVEL</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>DC_DOB1</Name>
       <Parent />
       <Previous />
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6049036+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.665584+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6049036+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6049036+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Date</DataType>
@@ -70,14 +74,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>DOB2</Name>
+      <Name>DC_DOB2</Name>
       <Parent />
-      <Previous>MortMult1</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Previous>DC_MortMult1</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6049036+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.666584+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6049036+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6049036+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Date</DataType>
@@ -88,32 +93,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>Death</Name>
-      <Parent>Benefit</Parent>
-      <Previous>BenType</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.666584+00:00</CreatedOn>
-      <Folder>true</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes>Death benefit inputs</Notes>
-      <IsExpanded>true</IsExpanded>
-      <DataType>Double</DataType>
-      <Value />
-      <Format>#,##0.00</Format>
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-      <AllowNulls>false</AllowNulls>
-    </Input>
-    <Input>
-      <Name>DthBen</Name>
+      <Name>DC_DthBen</Name>
       <Parent>Death</Parent>
       <Previous />
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6049036+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.666584+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6049036+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6049036+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
@@ -124,14 +112,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>LifeBasis</Name>
+      <Name>DC_LifeBasis</Name>
       <Parent>Policy</Parent>
-      <Previous>Term</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Previous>DC_Term</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6049036+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.666584+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6049036+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6049036+00:00</LastModified>
       <Notes>Single life (S), Joint Life First Death (JLF). Joint Life Last Death (JLL)</Notes>
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
@@ -142,14 +131,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>MatValue</Name>
+      <Name>DC_MatValue</Name>
       <Parent>Maturity</Parent>
       <Previous />
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6059051+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.666584+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6059051+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6059051+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
@@ -160,32 +150,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>Maturity</Name>
-      <Parent>Benefit</Parent>
-      <Previous>Death</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6675833+00:00</CreatedOn>
-      <Folder>true</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes>Maturity benefit inputs</Notes>
-      <IsExpanded>true</IsExpanded>
-      <DataType>Double</DataType>
-      <Value />
-      <Format>#,##0.00</Format>
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-      <AllowNulls>false</AllowNulls>
-    </Input>
-    <Input>
-      <Name>MortAgeAdj1</Name>
+      <Name>DC_MortAgeAdj1</Name>
       <Parent />
-      <Previous>Smoker1</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Previous>DC_Smoker1</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6059051+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6675833+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6059051+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6059051+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Integer</DataType>
@@ -196,14 +169,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>MortAgeAdj2</Name>
+      <Name>DC_MortAgeAdj2</Name>
       <Parent />
-      <Previous>Smoker2</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Previous>DC_Smoker2</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6059051+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6675833+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6059051+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6059051+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
@@ -214,14 +188,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>MortMult1</Name>
+      <Name>DC_MortMult1</Name>
       <Parent />
-      <Previous>MortAgeAdj1</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Previous>DC_MortAgeAdj1</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6059051+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6675833+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6059051+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6059051+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
@@ -232,14 +207,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>MortMult2</Name>
+      <Name>DC_MortMult2</Name>
       <Parent />
-      <Previous>MortAgeAdj2</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Previous>DC_MortAgeAdj2</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6059051+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6675833+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6059051+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6059051+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
@@ -250,14 +226,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>PUPDate</Name>
+      <Name>DC_PUPDate</Name>
       <Parent>Policy</Parent>
-      <Previous>LifeBasis</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Previous>DC_LifeBasis</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6059051+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6685871+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6059051+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6059051+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Date</DataType>
@@ -268,32 +245,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>Policy</Name>
-      <Parent />
-      <Previous>MortMult2</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6685871+00:00</CreatedOn>
-      <Folder>true</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes>Inputs specific to policy</Notes>
-      <IsExpanded>true</IsExpanded>
-      <DataType>Double</DataType>
-      <Value />
-      <Format>#,##0.00</Format>
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-      <AllowNulls>false</AllowNulls>
-    </Input>
-    <Input>
-      <Name>PremAnn</Name>
+      <Name>DC_PremAnn</Name>
       <Parent>Premium</Parent>
       <Previous />
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6059051+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6685871+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6059051+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6059051+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
@@ -304,14 +264,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>PremFreq</Name>
+      <Name>DC_PremFreq</Name>
       <Parent>Premium</Parent>
-      <Previous>PremAnn</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Previous>DC_PremAnn</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6059051+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6685871+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6059051+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6059051+00:00</LastModified>
       <Notes>Number of premiums paid each year, 0=single premium, 1=annual, 2=half-yearly, 3=termly, 4=quarterly, 12=monthly</Notes>
       <IsExpanded>true</IsExpanded>
       <DataType>Integer</DataType>
@@ -322,14 +283,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>PremTerm</Name>
+      <Name>DC_PremTerm</Name>
       <Parent>Premium</Parent>
-      <Previous>PremFreq</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Previous>DC_PremFreq</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6059051+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6695871+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6059051+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6059051+00:00</LastModified>
       <Notes>Premium payment term in years.  (0 for single premiums, if premiums paid for whole term then set equal to Term, otherwise set to number of years premiums will be paid for).</Notes>
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
@@ -340,32 +302,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>Premium</Name>
-      <Parent />
-      <Previous>Policy</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6695871+00:00</CreatedOn>
-      <Folder>true</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes>Premium related inputs</Notes>
-      <IsExpanded>true</IsExpanded>
-      <DataType>Double</DataType>
-      <Value />
-      <Format>#,##0.00</Format>
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-      <AllowNulls>false</AllowNulls>
-    </Input>
-    <Input>
-      <Name>Product</Name>
+      <Name>DC_Product</Name>
       <Parent>Policy</Parent>
-      <Previous>UniqueID</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Previous>DC_UniqueID</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6059051+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6695871+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6059051+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6059051+00:00</LastModified>
       <Notes>Product Type: Term insurance (TERM), Whole of life assurance (WOL), Pure Endowment (PURE_ENDOW), Endowment (ENDOW)</Notes>
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
@@ -376,14 +321,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>Sex1</Name>
+      <Name>DC_Sex1</Name>
       <Parent />
-      <Previous>DOB1</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Previous>DC_DOB1</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6059051+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6695871+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6059051+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6059051+00:00</LastModified>
       <Notes>Gender (M,F)</Notes>
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
@@ -394,14 +340,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>Sex2</Name>
+      <Name>DC_Sex2</Name>
       <Parent />
-      <Previous>DOB2</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Previous>DC_DOB2</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6069045+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6695871+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6069045+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6069045+00:00</LastModified>
       <Notes>Gender (M,F)</Notes>
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
@@ -412,14 +359,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>Smoker1</Name>
+      <Name>DC_Smoker1</Name>
       <Parent />
-      <Previous>Sex1</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Previous>DC_Sex1</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6069045+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6705865+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6069045+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6069045+00:00</LastModified>
       <Notes>Smoker status - Y (smoker), N (non-smoker), U (unknown)</Notes>
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
@@ -430,14 +378,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>Smoker2</Name>
+      <Name>DC_Smoker2</Name>
       <Parent />
-      <Previous>Sex2</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Previous>DC_Sex2</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6069045+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6705865+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6069045+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6069045+00:00</LastModified>
       <Notes>Smoker status - Y (smoker), N (non-smoker), U (unknown)</Notes>
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
@@ -448,14 +397,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>StartDate</Name>
+      <Name>DC_StartDate</Name>
       <Parent>Policy</Parent>
-      <Previous>Product</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Previous>DC_Product</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6069045+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6705865+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6069045+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6069045+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Date</DataType>
@@ -466,14 +416,15 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>Term</Name>
+      <Name>DC_Term</Name>
       <Parent>Policy</Parent>
-      <Previous>StartDate</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Previous>DC_StartDate</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6069045+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6705865+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6069045+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6069045+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
@@ -484,19 +435,96 @@
       <AllowNulls>false</AllowNulls>
     </Input>
     <Input>
-      <Name>UniqueID</Name>
+      <Name>DC_UniqueID</Name>
       <Parent>Policy</Parent>
       <Previous />
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6069045+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6705865+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6069045+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6069045+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value />
       <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>Death</Name>
+      <Parent>Benefit</Parent>
+      <Previous>DC_BenType</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6069045+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6069045+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-03-10T15:03:16.6069045+00:00</LastModified>
+      <Notes>Death benefit inputs</Notes>
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>Maturity</Name>
+      <Parent>Benefit</Parent>
+      <Previous>Death</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6069045+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6069045+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-03-10T15:03:16.6069045+00:00</LastModified>
+      <Notes>Maturity benefit inputs</Notes>
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>Policy</Name>
+      <Parent />
+      <Previous>DC_MortMult2</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6069045+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6069045+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-03-10T15:03:16.6069045+00:00</LastModified>
+      <Notes>Inputs specific to policy</Notes>
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>Premium</Name>
+      <Parent />
+      <Previous>Policy</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6069045+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6069045+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-03-10T15:03:16.6069045+00:00</LastModified>
+      <Notes>Premium related inputs</Notes>
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
       <AllowNulls>false</AllowNulls>
@@ -507,11 +535,12 @@
       <Name>MaxAge</Name>
       <Parent />
       <Previous>MinAge</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.607904+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6715868+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.607904+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.607904+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Integer</DataType>
@@ -526,11 +555,12 @@
       <Name>MinAge</Name>
       <Parent />
       <Previous>ParamTbl</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.607904+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6725876+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.607904+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.607904+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Integer</DataType>
@@ -546,11 +576,11 @@
       <Parent />
       <Previous>ValDate</Previous>
       <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2025-03-07T12:00:28.453265+00:00</LastModifiedOn>
+      <LastModifiedOn>2025-03-10T15:03:16.607904+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6725876+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.607904+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>2025-03-07T12:00:28.453265+00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.607904+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>TableDbl</DataType>
@@ -565,11 +595,12 @@
       <Name>ParamVal</Name>
       <Parent />
       <Previous>MaxAge</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.607904+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6735881+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.607904+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.607904+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
@@ -584,11 +615,12 @@
       <Name>ValDate</Name>
       <Parent />
       <Previous />
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.607904+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6735881+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.607904+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.607904+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Date</DataType>
@@ -602,435 +634,115 @@
   </Params>
   <Formulae>
     <Formula>
-      <Name>Benefit</Name>
-      <Parent />
-      <Previous>Premium</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Name>Age1</Name>
+      <Parent>Policyholder1</Parent>
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.607904+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6745871+00:00</CreatedOn>
-      <Folder>true</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>Double</DataType>
-      <Value />
-      <Format>#,##0.00</Format>
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_Age1</Name>
-      <Parent />
-      <Previous>Initialise</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6755873+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.607904+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
+      <LastModified>2025-03-10T15:03:16.607904+00:00</LastModified>
+      <Notes>Calculates age from DOB and Valuation Date</Notes>
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
-      <Value>If DOB1.ToString("ddmmyyyy") = ""
-    Log.Message("DOB1 is not populated for UniqueID = " &amp;UniqueID)
+      <Value>If DC_DOB1.ToString("ddmmyyyy") = ""
+    Log.Message("DOB1 is not populated for UniqueID = " &amp;DC_UniqueID)
 Else        
-    Return ValidateAge(DOB1, UniqueID, MinAge, MaxAge, ValDate, 1, LifeBasis)
+    Return ValidateAge(DC_DOB1, DC_UniqueID, MinAge, MaxAge, ValDate, 1, DC_LifeBasis)
 End If</Value>
       <Format>#,##0.00</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
     </Formula>
     <Formula>
-      <Name>DC_Age2</Name>
-      <Parent />
-      <Previous>DC_MortMult1</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Name>Age2</Name>
+      <Parent>Policyholder2</Parent>
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.607904+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6755873+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.607904+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
+      <LastModified>2025-03-10T15:03:16.607904+00:00</LastModified>
+      <Notes>Calculates age from DOB and Valuation Date</Notes>
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
-      <Value>If DOB2.ToString("ddmmyyyy") = ""
-    Return ValidateAge(DOB2, UniqueID, MinAge, MaxAge, ValDate, 2, LifeBasis)
+      <Value>If DC_DOB2.ToString("ddmmyyyy") = ""
+    Return ValidateAge(DC_DOB2, DC_UniqueID, MinAge, MaxAge, ValDate, 2, DC_LifeBasis)
 End If    </Value>
       <Format>#,##0.00</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
     </Formula>
     <Formula>
-      <Name>DC_BenType</Name>
+      <Name>BenType</Name>
       <Parent>Benefit</Parent>
       <Previous />
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.607904+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6755873+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.607904+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.607904+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
-      <Value>Return BenType</Value>
+      <Value>Return DC_BenType</Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
     </Formula>
     <Formula>
-      <Name>DC_DthBen</Name>
-      <Parent>Death</Parent>
-      <Previous />
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Name>Benefit</Name>
+      <Parent />
+      <Previous>Premium</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.607904+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6765865+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <CreatedOn>2025-03-10T15:03:16.607904+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-03-10T15:03:16.607904+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
-      <Value>If DthBen &lt;&gt; "" Then Return val(DthBen)</Value>
+      <Value />
       <Format>#,##0.00</Format>
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_LifeBasis</Name>
-      <Parent>Policy</Parent>
-      <Previous>DC_Term</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6765865+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>String</DataType>
-      <Value>Return ValidateLifeBasis(LifeBasis, UniqueID, Sex2)</Value>
-      <Format />
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_MatValue</Name>
-      <Parent>Maturity</Parent>
-      <Previous />
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6765865+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>Double</DataType>
-      <Value>If MatValue &lt;&gt; "" Then Return val(MatValue)</Value>
-      <Format>#,##0.00</Format>
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_MortAgeAdj1</Name>
-      <Parent />
-      <Previous>DC_Smoker1</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6765865+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>Double</DataType>
-      <Value>Return MortAgeAdj1</Value>
-      <Format>#,##0</Format>
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_MortAgeAdj2</Name>
-      <Parent />
-      <Previous>DC_Smoker2</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6775862+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>Double</DataType>
-      <Value>If MortAgeAdj2 &lt;&gt; "" Then Return val(MortAgeAdj2)</Value>
-      <Format>#,##0</Format>
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_MortMult1</Name>
-      <Parent />
-      <Previous>DC_MortAgeAdj1</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6775862+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>Double</DataType>
-      <Value>Return MortMult1</Value>
-      <Format>#,##0.00</Format>
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_MortMult2</Name>
-      <Parent />
-      <Previous>DC_MortAgeAdj2</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6775862+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>Double</DataType>
-      <Value>If MortMult2 &lt;&gt; "" Then Return val(MortMult2)</Value>
-      <Format>#,##0.00</Format>
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_PUPDate</Name>
-      <Parent>Policy</Parent>
-      <Previous>DC_LifeBasis</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6775862+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>Date</DataType>
-      <Value>Return PUPDate</Value>
-      <Format>dd/MM/yyyy</Format>
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_PremAnn</Name>
-      <Parent>Premium</Parent>
-      <Previous />
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6785885+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>Double</DataType>
-      <Value>Return PremAnn</Value>
-      <Format>#,##0.00</Format>
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_PremFreq</Name>
-      <Parent>Premium</Parent>
-      <Previous>DC_PremAnn</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6785885+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>Integer</DataType>
-      <Value>If (PremFreq &lt;&gt; 0 And PremFreq &lt;&gt; 1 And PremFreq &lt;&gt; 2 And PremFreq &lt;&gt; 3 And PremFreq &lt;&gt; 4 And PremFreq &lt;&gt; 12)
-    Log.Message("PremFreq is not set to allowed value for Unique ID = " &amp;UniqueID)
-    Log.Report("PremFreq is not set to allowed value for Unique ID = " &amp;UniqueID)
-End If
-Return PremFreq</Value>
-      <Format>#,##0</Format>
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_PremTerm</Name>
-      <Parent>Premium</Parent>
-      <Previous>DC_PremFreq</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6785885+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>Double</DataType>
-      <Value>If PremTerm &lt;&gt; "" Then Return val(PremTerm)</Value>
-      <Format>#,##0</Format>
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_Product</Name>
-      <Parent>Policy</Parent>
-      <Previous>DC_UniqueID</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6785885+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>String</DataType>
-      <Value>If (Product &lt;&gt; "TERM" And Product &lt;&gt; "ENDOW" And Product &lt;&gt; "WOL" And Product &lt;&gt; "PURE_ENDOW")
-    Log.Message("Product is not set to allowed product type for Unique ID = " &amp;UniqueID)
-    Log.Report("Product is not set to allowed product type for Unique ID = " &amp;UniqueID)
-End If
-Return Product</Value>
-      <Format />
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_Sex1</Name>
-      <Parent />
-      <Previous>DC_Age1</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6795882+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>String</DataType>
-      <Value>If Sex1 = ""
-    Log.Message("Sex1 is not populated for UniqueID = " &amp;UniqueID)
-Else 
-    Return Sex1
-End If    </Value>
-      <Format />
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_Sex2</Name>
-      <Parent />
-      <Previous>DC_Age2</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6795882+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>String</DataType>
-      <Value>Return Sex2</Value>
-      <Format />
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_Smoker1</Name>
-      <Parent />
-      <Previous>DC_Sex1</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6795882+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>String</DataType>
-      <Value>If Smoker1 = ""
-    Log.Message("Smoker1 is not populated for UniqueID = " &amp;UniqueID)
-Else
-    Return ValidateSmoker(Smoker1, UniqueID, 1, LifeBasis)
-End If    </Value>
-      <Format />
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_Smoker2</Name>
-      <Parent />
-      <Previous>DC_Sex2</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6805872+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>String</DataType>
-      <Value>If Smoker2 = ""
-    Log.Message("Smoker2 is not populated for UniqueID = " &amp;UniqueID)
-Else
-    Return ValidateSmoker(Smoker2, UniqueID, 2, LifeBasis)
-End If  </Value>
-      <Format />
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_StartDate</Name>
-      <Parent>Policy</Parent>
-      <Previous>DC_Product</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6805872+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>Date</DataType>
-      <Value>Return StartDate</Value>
-      <Format>dd/MM/yyyy</Format>
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_Term</Name>
-      <Parent>Policy</Parent>
-      <Previous>DC_StartDate</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6805872+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>String</DataType>
-      <Value>Return Term</Value>
-      <Format />
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_UniqueID</Name>
-      <Parent>Policy</Parent>
-      <Previous />
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.681587+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>String</DataType>
-      <Value>Return UniqueID</Value>
-      <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
     </Formula>
     <Formula>
       <Name>Death</Name>
-      <Parent />
-      <Previous>Benefit</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Parent>Benefit</Parent>
+      <Previous>BenType</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.607904+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.681587+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.607904+00:00</CreatedOn>
       <Folder>true</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.607904+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>DthBen</Name>
+      <Parent>Death</Parent>
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6089037+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6089037+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6089037+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>If DC_DthBen &lt;&gt; "" Then Return val(DC_DthBen)</Value>
       <Format>#,##0.00</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
@@ -1039,45 +751,174 @@ End If  </Value>
       <Name>Initialise</Name>
       <Parent />
       <Previous />
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6089037+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.681587+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6089037+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6089037+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType />
-      <Value>InputValidation.Log = Model.Log</Value>
+      <Value>InputConversion.Log = Model.Log</Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
     </Formula>
     <Formula>
-      <Name>Maturity</Name>
-      <Parent />
-      <Previous>Death</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Name>LifeBasis</Name>
+      <Parent>Policy</Parent>
+      <Previous>Term</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6089037+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.681587+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6089037+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6089037+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>Return ValidateLifeBasis(DC_LifeBasis, DC_UniqueID, DC_Sex2)</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>MatValue</Name>
+      <Parent>Maturity</Parent>
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6089037+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6089037+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6089037+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>If DC_MatValue &lt;&gt; "" Then Return val(DC_MatValue)</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>Maturity</Name>
+      <Parent>Benefit</Parent>
+      <Previous>Death</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6089037+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6089037+00:00</CreatedOn>
       <Folder>true</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6089037+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value />
       <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>MortAgeAdj1</Name>
+      <Parent>Policyholder1</Parent>
+      <Previous>Smoker1</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6089037+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6089037+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6089037+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>Return DC_MortAgeAdj1</Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>MortAgeAdj2</Name>
+      <Parent>Policyholder2</Parent>
+      <Previous>Smoker2</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6089037+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6089037+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6089037+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>If DC_MortAgeAdj2 &lt;&gt; "" Then Return val(DC_MortAgeAdj2)</Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>MortMult1</Name>
+      <Parent>Policyholder1</Parent>
+      <Previous>MortAgeAdj1</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6089037+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6089037+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6089037+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>Return DC_MortMult1</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>MortMult2</Name>
+      <Parent>Policyholder2</Parent>
+      <Previous>MortAgeAdj2</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6089037+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6089037+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6089037+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>If DC_MortMult2 &lt;&gt; "" Then Return val(DC_MortMult2)</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>PUPDate</Name>
+      <Parent>Policy</Parent>
+      <Previous>LifeBasis</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6089037+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6089037+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6089037+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Date</DataType>
+      <Value>Return DC_PUPDate</Value>
+      <Format>dd/MM/yyyy</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
     </Formula>
     <Formula>
       <Name>Policy</Name>
       <Parent />
-      <Previous>DC_MortMult2</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <Previous>Initialise</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6089037+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.681587+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6089037+00:00</CreatedOn>
       <Folder>true</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6089037+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
@@ -1087,19 +928,274 @@ End If  </Value>
       <IsPrivate>false</IsPrivate>
     </Formula>
     <Formula>
-      <Name>Premium</Name>
+      <Name>Policyholder1</Name>
       <Parent />
       <Previous>Policy</Previous>
-      <LastModifiedOn>0001-01-01T00:00:00</LastModifiedOn>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6099041+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-28T10:41:31.6830902+00:00</CreatedOn>
+      <CreatedOn>2025-03-10T15:03:16.6099041+00:00</CreatedOn>
       <Folder>true</Folder>
-      <LastModified>0001-01-01T00:00:00</LastModified>
+      <LastModified>2025-03-10T15:03:16.6099041+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value />
       <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>Policyholder2</Name>
+      <Parent />
+      <Previous>Policyholder1</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6099041+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6099041+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-03-10T15:03:16.6099041+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>PremAnn</Name>
+      <Parent>Premium</Parent>
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6099041+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6099041+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6099041+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>Return DC_PremAnn</Value>
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>PremFreq</Name>
+      <Parent>Premium</Parent>
+      <Previous>PremAnn</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6099041+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6099041+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6099041+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Integer</DataType>
+      <Value>If (DC_PremFreq &lt;&gt; 0 And DC_PremFreq &lt;&gt; 1 And DC_PremFreq &lt;&gt; 2 And DC_PremFreq &lt;&gt; 3 And DC_PremFreq &lt;&gt; 4 And DC_PremFreq &lt;&gt; 12)
+    Log.Message("PremFreq is not set to allowed value for Unique ID = " &amp;DC_UniqueID)
+    Log.Report("PremFreq is not set to allowed value for Unique ID = " &amp;DC_UniqueID)
+End If
+Return DC_PremFreq</Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>PremTerm</Name>
+      <Parent>Premium</Parent>
+      <Previous>PremFreq</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6099041+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6099041+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6099041+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>If DC_PremTerm &lt;&gt; "" Then Return val(DC_PremTerm)</Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>Premium</Name>
+      <Parent />
+      <Previous>Policyholder2</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6099041+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6099041+00:00</CreatedOn>
+      <Folder>true</Folder>
+      <LastModified>2025-03-10T15:03:16.6099041+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value />
+      <Format>#,##0.00</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>Product</Name>
+      <Parent>Policy</Parent>
+      <Previous>UniqueID</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6099041+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6099041+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6099041+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>If (DC_Product &lt;&gt; "TERM" And DC_Product &lt;&gt; "ENDOW" And DC_Product &lt;&gt; "WOL" And DC_Product &lt;&gt; "PURE_ENDOW")
+    Log.Message("Product is not set to allowed product type for Unique ID = " &amp;DC_UniqueID)
+    Log.Report("Product is not set to allowed product type for Unique ID = " &amp;DC_UniqueID)
+End If
+Return DC_Product</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>Sex1</Name>
+      <Parent>Policyholder1</Parent>
+      <Previous>Age1</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6099041+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6099041+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6099041+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>If DC_Sex1 = ""
+    Log.Message("Sex1 is not populated for UniqueID = " &amp;DC_UniqueID)
+Else 
+    Return DC_Sex1
+End If    </Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>Sex2</Name>
+      <Parent>Policyholder2</Parent>
+      <Previous>Age2</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6099041+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6099041+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6099041+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>Return DC_Sex2</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>Smoker1</Name>
+      <Parent>Policyholder1</Parent>
+      <Previous>Sex1</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6099041+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6099041+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6099041+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>If DC_Smoker1 = ""
+    Log.Message("Smoker1 is not populated for UniqueID = " &amp;DC_UniqueID)
+Else
+    Return ValidateSmoker(DC_Smoker1, DC_UniqueID, 1, DC_LifeBasis)
+End If    </Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>Smoker2</Name>
+      <Parent>Policyholder2</Parent>
+      <Previous>Sex2</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6109045+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6109045+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6109045+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>If DC_Smoker2 = ""
+    Log.Message("Smoker2 is not populated for UniqueID = " &amp;DC_UniqueID)
+Else
+    Return ValidateSmoker(DC_Smoker2, DC_UniqueID, 2, DC_LifeBasis)
+End If  </Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>StartDate</Name>
+      <Parent>Policy</Parent>
+      <Previous>Product</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6109045+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6109045+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6109045+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Date</DataType>
+      <Value>Return DC_StartDate</Value>
+      <Format>dd/MM/yyyy</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>Term</Name>
+      <Parent>Policy</Parent>
+      <Previous>StartDate</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6109045+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6109045+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6109045+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>Return DC_Term</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>UniqueID</Name>
+      <Parent>Policy</Parent>
+      <Previous />
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T15:03:16.6109045+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-10T15:03:16.6109045+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T15:03:16.6109045+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>Return DC_UniqueID</Value>
+      <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
     </Formula>

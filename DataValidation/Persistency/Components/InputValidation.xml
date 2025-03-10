@@ -4,11 +4,11 @@
   <Parent />
   <Previous />
   <LastModifiedBy>ClareStone</LastModifiedBy>
-  <LastModifiedOn>2025-03-10T13:06:59.9352845+00:00</LastModifiedOn>
+  <LastModifiedOn>2025-03-10T15:03:16.617423+00:00</LastModifiedOn>
   <CreatedBy>ClareStone</CreatedBy>
-  <CreatedOn>2025-02-27T16:04:27.3214378+00:00</CreatedOn>
+  <CreatedOn>2025-03-10T15:03:16.617423+00:00</CreatedOn>
   <Folder>false</Folder>
-  <LastModified>2025-03-10T13:06:59.9352845+00:00</LastModified>
+  <LastModified>2025-03-10T15:03:16.617423+00:00</LastModified>
   <Notes />
   <IsExpanded>true</IsExpanded>
   <ProjectScope>true</ProjectScope>
@@ -22,23 +22,26 @@
     Else    
         If val(DateSpan.TermInYears(fieldinput1, fieldinput5)) &lt; fieldinput3
             If fieldinput6 = 1
-                Log.Report(fieldinput2 &amp; " Age of policyholder1 is not within acceptable bounds")
+                Log.Report(fieldinput2 &amp; " Age of policyholder1 is not within acceptable bounds. DOB = " &amp; fieldinput1)
             ElseIf fieldinput7 &lt;&gt; "S"
-                Log.Report(fieldinput2 &amp; " Age of policyholder2 is not within acceptable bounds")
+                Log.Report(fieldinput2 &amp; " Age of policyholder2 is not within acceptable bounds. DOB = " &amp; fieldinput1)
             End If
         ElseIf val(DateSpan.TermInYears(fieldinput1, fieldinput5)) &gt; fieldinput4
             If fieldinput6 = 1
-                Log.Report(fieldinput2 &amp; " Age of policyholder1 is not within acceptable bounds")
+                Log.Report(fieldinput2 &amp; " Age of policyholder1 is not within acceptable bounds. DOB = " &amp; fieldinput1)
             ElseIf fieldinput7 &lt;&gt; "S"
-                Log.Report(fieldinput2 &amp; " Age of policyholder2 is not within acceptable bounds")
+                Log.Report(fieldinput2 &amp; " Age of policyholder2 is not within acceptable bounds. DOB = " &amp; fieldinput1)
             End If
         End If
     End If    
     Return fieldinput1       
 End Function
-Function ValidateSex(fieldinput1 As String, fieldinput2 As String, fieldinput3 As Integer) As String
+Function ValidateSex(fieldinput1 As String, fieldinput2 As String, fieldinput3 As Integer, fieldinput4 As String) As String
     If fieldinput1 = "" And fieldinput3 = 1
-        Log.Report(fieldinput2 &amp; "Sex1 not populated")
+        Log.Report(fieldinput2 &amp; " Sex1 not populated")
+    ElseIf fieldinput1 = "" And (fieldinput4 = "JLL" Or fieldinput4 = "JLF")
+        Log.Report(fieldinput2 &amp; " Sex2 not populated and Lifebasis = " &amp; fieldinput4)
+    ElseIf fieldinput1 = ""     
     ElseIf fieldinput1 &lt;&gt; "M" And fieldinput1 &lt;&gt; "F"
         If fieldinput3 = 1
             Log.Report(fieldinput2 &amp; " Sex1 not set to accepted value M/F")
@@ -69,7 +72,7 @@ Function ValidateStartDate(fieldinput1 As Date, fieldinput2 As String, fieldinpu
     If fieldinput1.ToString("ddmmyyyy") = ""
         Log.Report(fieldinput2 &amp; " StartDate not populated")
     ElseIf fieldinput1.Day &gt; 31 Or fieldinput1.Month &gt; 12 Or fieldinput1.Year + 60 &lt; fieldinput3.Year Or fieldinput1.Year &gt; fieldinput3.Year + 1
-        Log.Report(fieldinput2 &amp; " Invalid StartDate" &amp; fieldinput1)
+        Log.Report(fieldinput2 &amp; " Invalid StartDate " &amp; fieldinput1)
     End If
     Return fieldinput1    
 End Function
