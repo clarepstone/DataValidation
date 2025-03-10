@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<ExtComponent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>InputValidation1</Name>
+  <Parent />
+  <Previous>InputValidation</Previous>
+  <LastModifiedBy>ClareStone</LastModifiedBy>
+  <LastModifiedOn>2025-03-07T12:01:30.7709431+00:00</LastModifiedOn>
+  <CreatedBy>ClareStone</CreatedBy>
+  <CreatedOn>2025-03-07T11:28:33.8303922+00:00</CreatedOn>
+  <Folder>false</Folder>
+  <LastModified>2025-03-07T12:01:30.7709431+00:00</LastModified>
+  <Notes />
+  <IsExpanded>true</IsExpanded>
+  <ProjectScope>true</ProjectScope>
+  <Code>function ValidateLifeBasis2(fieldinput1 As String, fieldinput2 As String, fieldinput3 As String) As String
+    Dim value As String    
+    If fieldinput1 &lt;&gt; "S" And fieldinput1 &lt;&gt; "JLF" And fieldinput1 &lt;&gt; "JLL" Then
+        If fieldinput1 = "" And fieldinput3 = ""
+            Log.Message("LifeBasis changed from blank to S for Unique_ID = " &amp; fieldinput2)
+            value = "S"
+        ElseIf fieldinput1 = "" And fieldinput3 &lt;&gt; ""
+            Log.Message("LifeBasis changed from blank to JLF for Unique_ID = " &amp; fieldinput2)
+            value = "JLF"
+        ElseIf fieldinput3 = ""
+            Log.Message("LifeBasis changed from " &amp; fieldinput1 &amp; " to S for Unique_ID = " &amp; fieldinput2)
+            value = "S"        
+        Else
+            Log.Message("LifeBasis changed from " &amp; fieldinput1 &amp; " to JLF for Unique_ID = " &amp; fieldinput2)        
+            value = "JLF"
+        End If     
+    Else
+        value = fieldinput1   
+    End if
+    Return value
+End Function
+
+Function ValidateAge2(fieldinput1 As Date, fieldinput2 As String, fieldinput3 As Integer, fieldinput4 As Integer, fieldinput5 As Date, fieldinput6 As Integer, fieldinput7 As String) As Double
+    Dim Agevalue As Double
+    If val(DateSpan.TermInYears(fieldinput1, fieldinput5)) &lt; fieldinput3
+        If fieldinput6 = 1
+            Log.Progress("Age of policyholder1 &lt; " &amp; fieldinput3 &amp; " for Unique_ID = " &amp; fieldinput2)
+            Log.Report("Age of policyholder1 &lt; " &amp; fieldinput3 &amp; " for Unique_ID = " &amp; fieldinput2)
+            Log.Report("Age of policyholder1 changed to " &amp; fieldinput3 &amp; " for UniqueID = " &amp; fieldinput2)
+        ElseIf fieldinput7 &lt;&gt; "S"
+            Log.Progress("Age of policyholder2 &lt; " &amp; fieldinput3 &amp; " for Unique_ID = " &amp; fieldinput2)
+            Log.Report("Age of policyholder2 &lt; " &amp; fieldinput3 &amp; " for Unique_ID = " &amp; fieldinput2)
+            Log.Report("Age of policyholder2 changed to " &amp; fieldinput3 &amp; " for UniqueID = " &amp; fieldinput2)
+        End If
+        Agevalue = fieldinput3
+    ElseIf val(DateSpan.TermInYears(fieldinput1, fieldinput5)) &gt; fieldinput4
+        If fieldinput6 = 1
+            Log.Message("Age of policyholder1 &gt; " &amp; fieldinput4 &amp; " for Unique_ID = " &amp; fieldinput2)
+            Log.Report("Age of policyholder1 &gt; " &amp; fieldinput4 &amp; " for Unique_ID = " &amp; fieldinput2)
+            Log.Report("Age of policyholder1 changed to " &amp; fieldinput4 &amp; " for UniqueID = " &amp; fieldinput2)
+            Agevalue = fieldinput4        
+        ElseIf fieldinput7 &lt;&gt; "S"
+            Log.Message("Age of policyholder2 &gt; " &amp; fieldinput4 &amp; " for Unique_ID = " &amp; fieldinput2)
+            Log.Report("Age of policyholder2 &gt; " &amp; fieldinput4 &amp; " for Unique_ID = " &amp; fieldinput2)
+            Log.Report("Age of policyholder2 changed to " &amp; fieldinput4 &amp; " for UniqueID = " &amp; fieldinput2)
+            Agevalue = fieldinput4        
+        End If
+    Else
+        Agevalue = val(DateSpan.TermInYears(fieldinput1, fieldinput5))   
+    End If
+    Return Agevalue       
+End Function
+Function ValidateSmoker2(fieldinput1 As String, fieldinput2 As String, fieldinput3 As Integer, fieldinput4 As String) As String
+    If fieldinput1 &lt;&gt; "Y" And fieldinput1 &lt;&gt; "N" And fieldinput1 &lt;&gt; "U"
+        If fieldinput3 = 1
+            Log.Progress("Smoker1 status is not set to accepted value and will be changed to Y for UniqueID = " &amp;fieldinput2)
+            Log.Report("Smoker1 status is not set to accepted value and will be changed to Y for UniqueID = " &amp;fieldinput2)
+            Return "Y"    
+        ElseIf fieldinput4 &lt;&gt; "S"
+            Log.Progress("Smoker2 status is not set to accepted value and will be changed to Y for UniqueID = " &amp;fieldinput2)
+            Log.Report("Smoker2 status is not set to accepted value and will be changed to Y for UniqueID = " &amp;fieldinput2)
+            Return "Y"    
+        End If        
+    Else
+        Return fieldinput1    
+    End If    
+End Function</Code>
+</ExtComponent>

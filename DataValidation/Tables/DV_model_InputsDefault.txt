@@ -1,0 +1,2 @@
+DOB1	Sex1	Smoker1	MortAgeAdj1	MortMult1	DOB2	Sex2	Smoker2	MortAgeAdj2	MortMult2	UniqueID	Product	StartDate	Term	LifeBasis	PUPDate	PremAnn	PremFreq	PremTerm	BenType	DthBen	MatValue
+23/08/1977			0	0	12/10/1965			0	1.00			01/01/2017		S	31/12/2024	0	0	0	LEVEL	10000	0

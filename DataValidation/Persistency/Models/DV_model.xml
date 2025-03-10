@@ -4,11 +4,11 @@
   <Parent />
   <Previous />
   <LastModifiedBy>ClareStone</LastModifiedBy>
-  <LastModifiedOn>2025-02-28T10:42:23.0607193+00:00</LastModifiedOn>
+  <LastModifiedOn>2025-03-10T13:18:14.3788375+00:00</LastModifiedOn>
   <CreatedBy>ClareStone</CreatedBy>
   <CreatedOn>2025-02-27T16:04:27.3159209+00:00</CreatedOn>
   <Folder>false</Folder>
-  <LastModified>2025-02-28T10:42:23.0607193+00:00</LastModified>
+  <LastModified>2025-03-10T13:18:14.3788375+00:00</LastModified>
   <Notes />
   <IsExpanded>true</IsExpanded>
   <Inherit>false</Inherit>
@@ -531,15 +531,95 @@
   </Inputs>
   <Params>
     <Parameter>
+      <Name>MaxAge</Name>
+      <Parent />
+      <Previous>MinAge</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-07T12:00:47.9789259+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-07T12:00:47.9779266+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-07T12:00:47.9789259+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Integer</DataType>
+      <Value>70</Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source>ParamTbl</Source>
+    </Parameter>
+    <Parameter>
+      <Name>MinAge</Name>
+      <Parent />
+      <Previous>ParamTbl</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-07T12:00:41.2055637+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-07T12:00:41.2045642+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-07T12:00:41.2055637+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Integer</DataType>
+      <Value>18</Value>
+      <Format>#,##0</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source>ParamTbl</Source>
+    </Parameter>
+    <Parameter>
+      <Name>ParamTbl</Name>
+      <Parent />
+      <Previous>ValDate</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-07T12:00:34.9027921+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-07T12:00:34.8977921+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-07T12:00:34.9027921+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>TableDbl</DataType>
+      <Value>DC_Parameters</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
+      <Name>ParamVal</Name>
+      <Parent />
+      <Previous>MaxAge</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-07T12:00:53.2282536+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-03-07T12:00:53.2262543+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-07T12:00:53.2282536+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>String</DataType>
+      <Value>Value1</Value>
+      <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <Access>ReadOnly</Access>
+      <Source />
+    </Parameter>
+    <Parameter>
       <Name>ValDate</Name>
       <Parent />
       <Previous />
       <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2025-02-27T16:04:27.31892+00:00</LastModifiedOn>
+      <LastModifiedOn>2025-03-07T12:00:34.9027921+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
       <CreatedOn>2025-02-27T16:04:27.31892+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>2025-02-27T16:04:27.31892+00:00</LastModified>
+      <LastModified>2025-03-07T12:00:34.9027921+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Date</DataType>
@@ -571,62 +651,56 @@
       <IsPrivate>false</IsPrivate>
     </Formula>
     <Formula>
-      <Name>DC_Age1</Name>
-      <Parent />
-      <Previous>Initialise</Previous>
-      <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2025-02-27T16:04:27.31892+00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-27T16:04:27.31892+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>2025-02-27T16:04:27.31892+00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>Double</DataType>
-      <Value>If DOB1.ToString("ddmmyyyy") = ""
-    Log.Message("DOB1 is not populated for UniqueID = " &amp;UniqueID)
-Else        
-    Return ValidateAge(DOB1, UniqueID, MinAge, MaxAge, ValDate, 1, LifeBasis)
-End If</Value>
-      <Format>#,##0.00</Format>
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
-      <Name>DC_Age2</Name>
-      <Parent />
-      <Previous>DC_MortMult1</Previous>
-      <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2025-02-27T16:04:27.31892+00:00</LastModifiedOn>
-      <CreatedBy>ClareStone</CreatedBy>
-      <CreatedOn>2025-02-27T16:04:27.31892+00:00</CreatedOn>
-      <Folder>false</Folder>
-      <LastModified>2025-02-27T16:04:27.31892+00:00</LastModified>
-      <Notes />
-      <IsExpanded>true</IsExpanded>
-      <DataType>Double</DataType>
-      <Value>If DOB2.ToString("ddmmyyyy") = ""
-    Return ValidateAge(DOB2, UniqueID, MinAge, MaxAge, ValDate, 2, LifeBasis)
-End If    </Value>
-      <Format>#,##0.00</Format>
-      <Override>false</Override>
-      <IsPrivate>false</IsPrivate>
-    </Formula>
-    <Formula>
       <Name>DC_BenType</Name>
       <Parent>Benefit</Parent>
       <Previous />
       <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2025-02-27T16:04:27.31892+00:00</LastModifiedOn>
+      <LastModifiedOn>2025-03-10T13:18:14.3788375+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
       <CreatedOn>2025-02-27T16:04:27.31892+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>2025-02-27T16:04:27.31892+00:00</LastModified>
+      <LastModified>2025-03-10T13:18:14.3788375+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
-      <Value>Return BenType</Value>
+      <Value>Return ValidateBenType(BenType, UniqueID, Product)</Value>
       <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>DC_DOB1</Name>
+      <Parent />
+      <Previous>Initialise</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T12:30:39.0740993+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-02-27T16:04:27.31892+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T12:30:39.0740993+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Date</DataType>
+      <Value>Return ValidateDOB(DOB1, UniqueID, MinAge, MaxAge, ValDate, 1, LifeBasis)</Value>
+      <Format>dd/MM/yyyy</Format>
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+    </Formula>
+    <Formula>
+      <Name>DC_DOB2</Name>
+      <Parent />
+      <Previous>DC_MortMult1</Previous>
+      <LastModifiedBy>ClareStone</LastModifiedBy>
+      <LastModifiedOn>2025-03-10T12:30:45.7400686+00:00</LastModifiedOn>
+      <CreatedBy>ClareStone</CreatedBy>
+      <CreatedOn>2025-02-27T16:04:27.31892+00:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2025-03-10T12:30:45.7400686+00:00</LastModified>
+      <Notes />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Date</DataType>
+      <Value>Return ValidateDOB(DOB2, UniqueID, MinAge, MaxAge, ValDate, 2, LifeBasis)  </Value>
+      <Format>dd/MM/yyyy</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
     </Formula>
@@ -797,19 +871,15 @@ End If    </Value>
       <Parent>Premium</Parent>
       <Previous>DC_PremAnn</Previous>
       <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2025-02-27T16:04:27.31892+00:00</LastModifiedOn>
+      <LastModifiedOn>2025-03-10T12:24:43.0519402+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
       <CreatedOn>2025-02-27T16:04:27.31892+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>2025-02-27T16:04:27.31892+00:00</LastModified>
+      <LastModified>2025-03-10T12:24:43.0519402+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Integer</DataType>
-      <Value>If (PremFreq &lt;&gt; 0 And PremFreq &lt;&gt; 1 And PremFreq &lt;&gt; 2 And PremFreq &lt;&gt; 3 And PremFreq &lt;&gt; 4 And PremFreq &lt;&gt; 12)
-    Log.Message("PremFreq is not set to allowed value for Unique ID = " &amp;UniqueID)
-    Log.Report("PremFreq is not set to allowed value for Unique ID = " &amp;UniqueID)
-End If
-Return PremFreq</Value>
+      <Value>Return ValidatePremFreq(PremFreq, UniqueID)</Value>
       <Format>#,##0</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
@@ -837,19 +907,15 @@ Return PremFreq</Value>
       <Parent>Policy</Parent>
       <Previous>DC_UniqueID</Previous>
       <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2025-02-27T16:04:27.3204282+00:00</LastModifiedOn>
+      <LastModifiedOn>2025-03-10T12:03:31.0624497+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
       <CreatedOn>2025-02-27T16:04:27.3204282+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>2025-02-27T16:04:27.3204282+00:00</LastModified>
+      <LastModified>2025-03-10T12:03:31.0624497+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
-      <Value>If (Product &lt;&gt; "TERM" And Product &lt;&gt; "ENDOW" And Product &lt;&gt; "WOL" And Product &lt;&gt; "PURE_ENDOW")
-    Log.Message("Product is not set to allowed product type for Unique ID = " &amp;UniqueID)
-    Log.Report("Product is not set to allowed product type for Unique ID = " &amp;UniqueID)
-End If
-Return Product</Value>
+      <Value>Return ValidateProduct(Product, UniqueID)</Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
@@ -857,21 +923,17 @@ Return Product</Value>
     <Formula>
       <Name>DC_Sex1</Name>
       <Parent />
-      <Previous>DC_Age1</Previous>
+      <Previous>DC_DOB1</Previous>
       <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2025-02-27T16:04:27.3204282+00:00</LastModifiedOn>
+      <LastModifiedOn>2025-03-07T12:22:55.4567293+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
       <CreatedOn>2025-02-27T16:04:27.3204282+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>2025-02-27T16:04:27.3204282+00:00</LastModified>
+      <LastModified>2025-03-07T12:22:55.4567293+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
-      <Value>If Sex1 = ""
-    Log.Message("Sex1 is not populated for UniqueID = " &amp;UniqueID)
-Else 
-    Return Sex1
-End If    </Value>
+      <Value>Return ValidateSex(Sex1, UniqueID, 1) </Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
@@ -879,17 +941,17 @@ End If    </Value>
     <Formula>
       <Name>DC_Sex2</Name>
       <Parent />
-      <Previous>DC_Age2</Previous>
+      <Previous>DC_DOB2</Previous>
       <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2025-02-27T16:04:27.3204282+00:00</LastModifiedOn>
+      <LastModifiedOn>2025-03-07T12:22:41.5137569+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
       <CreatedOn>2025-02-27T16:04:27.3204282+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>2025-02-27T16:04:27.3204282+00:00</LastModified>
+      <LastModified>2025-03-07T12:22:41.5137569+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
-      <Value>Return Sex2</Value>
+      <Value>Return ValidateSex(Sex2, UniqueID, 2)</Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
@@ -899,19 +961,16 @@ End If    </Value>
       <Parent />
       <Previous>DC_Sex1</Previous>
       <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2025-02-27T16:04:27.3204282+00:00</LastModifiedOn>
+      <LastModifiedOn>2025-03-07T11:50:42.4351329+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
       <CreatedOn>2025-02-27T16:04:27.3204282+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>2025-02-27T16:04:27.3204282+00:00</LastModified>
+      <LastModified>2025-03-07T11:50:42.4351329+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
-      <Value>If Smoker1 = ""
-    Log.Message("Smoker1 is not populated for UniqueID = " &amp;UniqueID)
-Else
-    Return ValidateSmoker(Smoker1, UniqueID, 1, LifeBasis)
-End If    </Value>
+      <Value>Return ValidateSmoker(Smoker1, UniqueID, 1, LifeBasis)
+ </Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
@@ -921,19 +980,16 @@ End If    </Value>
       <Parent />
       <Previous>DC_Sex2</Previous>
       <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2025-02-27T16:04:27.3204282+00:00</LastModifiedOn>
+      <LastModifiedOn>2025-03-07T11:50:50.9455778+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
       <CreatedOn>2025-02-27T16:04:27.3204282+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>2025-02-27T16:04:27.3204282+00:00</LastModified>
+      <LastModified>2025-03-07T11:50:50.9455778+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
-      <Value>If Smoker2 = ""
-    Log.Message("Smoker2 is not populated for UniqueID = " &amp;UniqueID)
-Else
-    Return ValidateSmoker(Smoker2, UniqueID, 2, LifeBasis)
-End If  </Value>
+      <Value>Return ValidateSmoker(Smoker2, UniqueID, 2, LifeBasis)
+ </Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
@@ -943,15 +999,15 @@ End If  </Value>
       <Parent>Policy</Parent>
       <Previous>DC_Product</Previous>
       <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2025-02-27T16:04:27.3204282+00:00</LastModifiedOn>
+      <LastModifiedOn>2025-03-10T12:21:08.8768978+00:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
       <CreatedOn>2025-02-27T16:04:27.3204282+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>2025-02-27T16:04:27.3204282+00:00</LastModified>
+      <LastModified>2025-03-10T12:21:08.8768978+00:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Date</DataType>
-      <Value>Return StartDate</Value>
+      <Value>Return ValidateStartDate(StartDate, UniqueID, ValDate)</Value>
       <Format>dd/MM/yyyy</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
