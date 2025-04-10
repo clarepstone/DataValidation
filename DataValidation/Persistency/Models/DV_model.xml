@@ -4,15 +4,16 @@
   <Parent />
   <Previous />
   <LastModifiedBy>ClareStone</LastModifiedBy>
-  <LastModifiedOn>2025-03-10T15:03:16.6109045+00:00</LastModifiedOn>
+  <LastModifiedOn>2025-03-11T15:20:10.199176+00:00</LastModifiedOn>
   <CreatedBy>ClareStone</CreatedBy>
   <CreatedOn>2025-03-10T15:03:16.6109045+00:00</CreatedOn>
   <Folder>false</Folder>
-  <LastModified>2025-03-10T15:03:16.6109045+00:00</LastModified>
+  <LastModified>2025-03-11T15:20:10.199176+00:00</LastModified>
   <Notes />
   <IsExpanded>true</IsExpanded>
   <Description>Model to validate the inputs used for valuation and pricing of conventional products</Description>
   <Inherit>false</Inherit>
+  <ExternalComponents>InputValidation</ExternalComponents>
   <Declarations />
   <UseDefaultExecuteCode>false</UseDefaultExecuteCode>
   <Inputs>

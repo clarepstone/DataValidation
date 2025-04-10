@@ -2,57 +2,29 @@
 <ExtComponent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Name>InputConversion</Name>
   <Parent />
-  <Previous>InputValidation</Previous>
+  <Previous>InputValidationandConversion</Previous>
   <LastModifiedBy>ClareStone</LastModifiedBy>
-  <LastModifiedOn>2025-03-10T15:03:16.617423+00:00</LastModifiedOn>
+  <LastModifiedOn>2025-04-10T16:05:40.9188809+01:00</LastModifiedOn>
   <CreatedBy>ClareStone</CreatedBy>
-  <CreatedOn>2025-03-10T15:03:16.617423+00:00</CreatedOn>
+  <CreatedOn>2025-04-10T15:01:52.0852542+01:00</CreatedOn>
   <Folder>false</Folder>
-  <LastModified>2025-03-10T15:03:16.617423+00:00</LastModified>
+  <LastModified>2025-04-10T16:05:40.9188809+01:00</LastModified>
   <Notes />
   <IsExpanded>true</IsExpanded>
   <ProjectScope>true</ProjectScope>
-  <Code>function ConvertLifeBasis(fieldinput1 As String, fieldinput2 As String, fieldinput3 As String) As String
-    Dim value As String    
-    If fieldinput1 &lt;&gt; "S" And fieldinput1 &lt;&gt; "JLF" And fieldinput1 &lt;&gt; "JLL" Then
-        If fieldinput1 = "" And fieldinput3 = ""
-            Log.Report(fieldinput2 &amp; " LifeBasis changed from blank to S")
-            value = "S"
-        ElseIf fieldinput1 = "" And fieldinput3 &lt;&gt; ""
-            Log.Report(fieldinput2 &amp; " LifeBasis changed from blank to JLF")
-            value = "JLF"
-        ElseIf fieldinput3 = ""
-            Log.Report(fieldinput2 &amp; " LifeBasis changed from " &amp; fieldinput1 &amp; " to S")
-            value = "S"        
-        Else
-            Log.Report(fieldinput2 &amp; " LifeBasis changed from " &amp; fieldinput1 &amp; " to JLF")        
-            value = "JLF"
-        End If     
-    Else
-        value = fieldinput1   
-    End if
-    Return value
-End Function
-Function ConvertDOB(fieldinput1 As Date, fieldinput2 As String, fieldinput3 As Integer, fieldinput4 As Integer, fieldinput5 As Date, fieldinput6 As Integer, fieldinput7 As String) As Double
-    Dim Agevalue As Double
-    If val(DateSpan.TermInYears(fieldinput1, fieldinput5)) &lt; fieldinput3
-        If fieldinput6 = 1
-            Log.Report(fieldinput2 &amp; " Age of policyholder1 less than minimum allowed so changed to " &amp; fieldinput3)
-        ElseIf fieldinput7 &lt;&gt; "S"
-            Log.Report(fieldinput2 &amp; " Age of policyholder2 less than minimum allowed so changed to " &amp; fieldinput3)
-        End If
-        Agevalue = fieldinput3
-    ElseIf val(DateSpan.TermInYears(fieldinput1, fieldinput5)) &gt; fieldinput4
-        If fieldinput6 = 1
-            Log.Report(fieldinput2 &amp; " Age of policyholder1 greater than maximum allowed so changed to " &amp; fieldinput4)
-        ElseIf fieldinput7 &lt;&gt; "S"
-            Log.Report(fieldinput2 &amp; " Age of policyholder2 greater than maximum allowed so changed to " &amp; fieldinput4)
-        End If
-        Agevalue = fieldinput4  
-    Else
-        Agevalue = val(DateSpan.TermInYears(fieldinput1, fieldinput5))   
+  <Code>Function ConvertDOB(fieldinput1 As Date, fieldinput2 As Date, fieldinput3 As Integer, fieldinput4 As String) As Double
+    If fieldinput3 = 1
+        Return val(DateSpan.TermInYears(fieldinput1, fieldinput2))
+    ElseIf fieldinput4 &lt;&gt; "S"
+        Return val(DateSpan.TermInYears(fieldinput1, fieldinput2))
     End If
-    Return Agevalue       
+End Function
+Function ConvertSex(fieldinput1 As String) As Integer
+    If Left(fieldinput1, 1) = "M"
+        Return 0
+    Else If Left(fieldinput1, 1) = "F"
+        Return 1
+    End If    
 End Function
 Function ConvertSmoker(fieldinput1 As String, fieldinput2 As String, fieldinput3 As Integer, fieldinput4 As String) As String
     If fieldinput1 &lt;&gt; "Y" And fieldinput1 &lt;&gt; "N" And fieldinput1 &lt;&gt; "U"
