@@ -4,20 +4,20 @@
   <Parent />
   <Previous />
   <LastModifiedBy>ClareStone</LastModifiedBy>
-  <LastModifiedOn>2025-03-10T15:03:16.617423+00:00</LastModifiedOn>
+  <LastModifiedOn>2025-04-11T15:03:47.0397987+01:00</LastModifiedOn>
   <CreatedBy>ClareStone</CreatedBy>
   <CreatedOn>2025-03-10T15:03:16.617423+00:00</CreatedOn>
   <Folder>false</Folder>
-  <LastModified>2025-03-10T15:03:16.617423+00:00</LastModified>
+  <LastModified>2025-04-11T15:03:47.0397987+01:00</LastModified>
   <Notes />
   <IsExpanded>true</IsExpanded>
   <ProjectScope>true</ProjectScope>
-  <Code>Function ValidateDOB(fieldinput1 As Date, fieldinput2 As String, fieldinput3 As Integer, fieldinput4 As Integer, fieldinput5 As Date, fieldinput6 As Integer, fieldinput7 As String) As Date
-    If fieldinput1.ToString("ddmmyyyy") = ""
+  <Code>Function ValidateDOB(fieldinput1 As Date, fieldinput2 As String, fieldinput3 As Integer, fieldinput4 As Integer, fieldinput5 As Date, fieldinput6 As Integer, fieldinput7 As String, fieldinput8 As String, fieldinput9 As String, fieldinput10 As String, fieldinput11 As String) As Date
+    If fieldinput1.ToString("ddmmyyyy") = "01000001"
         If fieldinput6 = 1
-            Log.Report(fieldinput2 &amp; " DOB is blank for one for policyholder1")
-        Else
-            Log.Report(fieldinput2 &amp; " DOB is blank for one for policyholder2")
+            Log.Report(fieldinput2 &amp; " DOB is blank for policyholder1")
+        ElseIf fieldinput7 &lt;&gt; "S" And (fieldinput8 &lt;&gt; "" Or fieldinput9 &lt;&gt; "" Or fieldinput10 &lt;&gt; "" Or fieldinput11 &lt;&gt; "")
+            Log.Report(fieldinput2 &amp; " DOB is blank for policyholder2")
         End If
     Else    
         If val(DateSpan.TermInYears(fieldinput1, fieldinput5)) &lt; fieldinput3
@@ -36,12 +36,14 @@
     End If    
     Return fieldinput1       
 End Function
-Function ValidateSex(fieldinput1 As String, fieldinput2 As String, fieldinput3 As Integer, fieldinput4 As String) As String
+Function ValidateSex(fieldinput1 As String, fieldinput2 As String, fieldinput3 As Integer, fieldinput4 As String, fieldinput5 As Date, fieldinput6 As String, fieldinput7 As String, fieldinput8 As String) As String
     If fieldinput1 = "" And fieldinput3 = 1
         Log.Report(fieldinput2 &amp; " Sex1 not populated")
     ElseIf fieldinput1 = "" And (fieldinput4 = "JLL" Or fieldinput4 = "JLF")
         Log.Report(fieldinput2 &amp; " Sex2 not populated and Lifebasis = " &amp; fieldinput4)
-    ElseIf fieldinput1 = ""     
+    ElseIf fieldinput1 = "" And fieldinput5.ToString("ddmmyyyy") = "01000001" And fieldinput6 = "" And fieldinput7 = "" And fieldinput8 = ""    
+    ElseIf fieldinput1 = ""
+        Log.Report(fieldinput2 &amp; " Sex2 not populated but at least one other 2nd life input is populated ")    
     ElseIf fieldinput1 &lt;&gt; "M" And fieldinput1 &lt;&gt; "F"
         If fieldinput3 = 1
             Log.Report(fieldinput2 &amp; " Sex1 not set to accepted value M/F")
@@ -51,48 +53,66 @@ Function ValidateSex(fieldinput1 As String, fieldinput2 As String, fieldinput3 A
     End If
     Return fieldinput1    
 End Function
-Function ValidateSmoker(fieldinput1 As String, fieldinput2 As String, fieldinput3 As Integer, fieldinput4 As String) As String
-    If fieldinput1 &lt;&gt; "Y" And fieldinput1 &lt;&gt; "N" And fieldinput1 &lt;&gt; "U"
+Function ValidateSmoker(fieldinput1 As String, fieldinput2 As String, fieldinput3 As Integer, fieldinput4 As String, fieldinput5 As Date, fieldinput6 As String, fieldinput7 As String, fieldinput8 As String) As String
+    If fieldinput1 = ""
+        If fieldinput3 = 1
+            Log.Report(fieldinput2 &amp; " Smoker1 status not populated")
+        ElseIf fieldinput4 = "JLL" Or fieldinput4 = "JLF"
+            Log.Report(fieldinput2 &amp; " Smoker2 status not populated")
+        ElseIf fieldinput4 = "" And fieldinput5.ToString("ddmmyyyy") = "01000001" And fieldinput6 = "" And fieldinput7 = "" And fieldinput8 = ""
+        ElseIf fieldinput4 = ""
+            Log.Report(fieldinput2 &amp; " Smoker2 status not populated but at least one other 2nd life input is populated ")
+        End If    
+    ElseIf fieldinput1 &lt;&gt; "Y" And fieldinput1 &lt;&gt; "N" And fieldinput1 &lt;&gt; "U"
         If fieldinput3 = 1
             Log.Report(fieldinput2 &amp; " Smoker1 status is not set to accepted value Y/N/U")
-        ElseIf fieldinput4 &lt;&gt; "S"
+        Else
             Log.Report(fieldinput2 &amp; " Smoker2 status is not set to accepted value Y/N/U")
-        End If        
-
+        End If
     End If
     Return fieldinput1    
 End Function
 Function ValidateProduct(fieldinput1 As String, fieldinput2 As String) As String
-    If (fieldinput1 &lt;&gt; "TERM" And fieldinput1 &lt;&gt; "ENDOW" And fieldinput1 &lt;&gt; "WOL" And fieldinput1 &lt;&gt; "PURE_ENDOW")
+    If fieldinput1 = ""
+        Log.Report(fieldinput2 &amp; " Product is not populated ")
+    ElseIf (fieldinput1 &lt;&gt; "TERM" And fieldinput1 &lt;&gt; "ENDOW" And fieldinput1 &lt;&gt; "WOL" And fieldinput1 &lt;&gt; "PURE_ENDOW")
         Log.Report(fieldinput2 &amp; " Product is not set to allowed product type")
     End If
     Return fieldinput1    
 End Function
 Function ValidateStartDate(fieldinput1 As Date, fieldinput2 As String, fieldinput3 As Date) As Date
-    If fieldinput1.ToString("ddmmyyyy") = ""
+    If fieldinput1.ToString("ddmmyyyy") = "01000001"
         Log.Report(fieldinput2 &amp; " StartDate not populated")
-    ElseIf fieldinput1.Day &gt; 31 Or fieldinput1.Month &gt; 12 Or fieldinput1.Year + 60 &lt; fieldinput3.Year Or fieldinput1.Year &gt; fieldinput3.Year + 1
+    ElseIf fieldinput1.Day &gt; 31 Or fieldinput1.Month &gt; 12 Or fieldinput1.Year + 52 &lt; fieldinput3.Year Or fieldinput1.Year &gt; fieldinput3.Year + 1
         Log.Report(fieldinput2 &amp; " Invalid StartDate " &amp; fieldinput1)
     End If
     Return fieldinput1    
 End Function
-Function ValidateLifeBasis(fieldinput1 As String, fieldinput2 As String, fieldinput3 As String) As String
+Function ValidateLifeBasis(fieldinput1 As String, fieldinput2 As String, fieldinput3 As String, fieldinput4 As Date, fieldinput5 As String, fieldinput6 As String, fieldinput7 As String) As String
     If fieldinput1 &lt;&gt; "S" And fieldinput1 &lt;&gt; "JLF" And fieldinput1 &lt;&gt; "JLL" Then
-        If fieldinput1 = "" And fieldinput3 = ""
+        If fieldinput1 = "" And fieldinput3 = "" And fieldinput4.ToString("ddmmyyyy") = "01000001" And fieldinput5 = "" And fieldinput6 = "" And fieldinput7 = ""
             Log.Report(fieldinput2 &amp; " LifeBasis blank but should be set to single")
-        ElseIf fieldinput1 = "" And fieldinput3 &lt;&gt; ""
-            Log.Report(fieldinput2 &amp; " LifeBasis blank but should be set to JLF or JLL")
-        ElseIf fieldinput3 = ""
+        ElseIf fieldinput1 = "" 
+            Log.Report(fieldinput2 &amp; " LifeBasis blank but should probably be set to JLF or JLL")
+        ElseIf fieldinput3 = "" And fieldinput4.ToString("ddmmyyyy") = "01000001" And fieldinput5 = "" And fieldinput6 = "" And fieldinput7 = ""
             Log.Report(fieldinput2 &amp; " LifeBasis not set to a valid string S/JLF/JLL, should be set to S" )   
         Else
-            Log.Report(fieldinput2 &amp; " LifeBasis not set to a valid string S/JLF/JLL, should be set to JLF or JLL")        
+            Log.Report(fieldinput2 &amp; " LifeBasis not set to a valid string S/JLF/JLL, should probably be set to JLF or JLL")        
         End If     
-    End if
-    Return fieldinput1
+    End If
+    If fieldinput1 &lt;&gt; ""
+        Return fieldinput1
+    End If    
 End Function
-Function ValidatePremFreq(fieldinput1 As Integer, fieldinput2 As String) As Integer
-    If (fieldinput1 &lt;&gt; 0 And fieldinput1 &lt;&gt; 1 And fieldinput1 &lt;&gt; 2 And fieldinput1 &lt;&gt; 3 And fieldinput1 &lt;&gt; 4 And fieldinput1 &lt;&gt; 12)
-        Log.Report(fieldinput2 &amp; " PremFreq is not set to allowed value 0/1/2/3/4/12")
+Function ValidatePremFreq(fieldinput1 As String, fieldinput2 As String) As String
+    If fieldinput1 = ""
+        Log.Report(fieldinput2 &amp; " PremFreq is not populated")
+        Return fieldinput1
+    End If
+    Dim PremFreq As Integer
+    PremFreq = CInt(fieldinput1)    
+    If (PremFreq &lt;&gt; 0 And PremFreq &lt;&gt; 1 And PremFreq &lt;&gt; 2 And PremFreq &lt;&gt; 3 And PremFreq &lt;&gt; 4 And PremFreq &lt;&gt; 6 And PremFreq &lt;&gt; 12)
+        Log.Report(fieldinput2 &amp; " PremFreq is not set to allowed value 0/1/2/3/4/6/12")
     End If
     Return fieldinput1
 End Function

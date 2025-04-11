@@ -4,11 +4,11 @@
   <Parent />
   <Previous>DC_model</Previous>
   <LastModifiedBy>ClareStone</LastModifiedBy>
-  <LastModifiedOn>2025-04-10T15:54:47.4538954+01:00</LastModifiedOn>
+  <LastModifiedOn>2025-04-11T11:49:21.0534651+01:00</LastModifiedOn>
   <CreatedBy>ClareStone</CreatedBy>
   <CreatedOn>2025-03-10T15:03:16.6049036+00:00</CreatedOn>
   <Folder>false</Folder>
-  <LastModified>2025-04-10T15:54:47.4538954+01:00</LastModified>
+  <LastModified>2025-04-11T11:49:21.0534651+01:00</LastModified>
   <Notes />
   <IsExpanded>true</IsExpanded>
   <Description>Model to validate &amp; convert inputs to be used in valuation and pricing model for conventional products.</Description>
@@ -661,15 +661,15 @@ End If</Value>
       <Parent>Policyholder2</Parent>
       <Previous />
       <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2025-04-10T15:54:47.4538954+01:00</LastModifiedOn>
+      <LastModifiedOn>2025-04-11T11:49:12.3578234+01:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
       <CreatedOn>2025-03-10T15:03:16.607904+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>2025-04-10T15:54:47.4538954+01:00</LastModified>
+      <LastModified>2025-04-11T11:49:12.3578234+01:00</LastModified>
       <Notes>Calculates age from DOB and Valuation Date</Notes>
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
-      <Value>Return ValidateConvertDOB(DC_DOB2, DC_UniqueID, MinAge, MaxAge, ValDate, 2, DC_LifeBasis)  </Value>
+      <Value>Return ValidateConvertDOB(DC_DOB2, DC_UniqueID, MinAge, MaxAge, ValDate, 2, LifeBasis())  </Value>
       <Format>#,##0.00</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
@@ -1075,15 +1075,15 @@ End If</Value>
       <Parent>Policyholder2</Parent>
       <Previous>Age2</Previous>
       <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2025-04-10T15:20:51.721763+01:00</LastModifiedOn>
+      <LastModifiedOn>2025-04-11T11:49:17.6275245+01:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
       <CreatedOn>2025-03-10T15:03:16.6099041+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>2025-04-10T15:20:51.721763+01:00</LastModified>
+      <LastModified>2025-04-11T11:49:17.6275245+01:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>Integer</DataType>
-      <Value>Return ValidateConvertSex(DC_Sex2, DC_UniqueID, 2, DC_LifeBasis)</Value>
+      <Value>Return ValidateConvertSex(DC_Sex2, DC_UniqueID, 2, LifeBasis())</Value>
       <Format>#,##0</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
@@ -1115,15 +1115,15 @@ End If  </Value>
       <Parent>Policyholder2</Parent>
       <Previous>Sex2</Previous>
       <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2025-04-10T15:26:45.0563944+01:00</LastModifiedOn>
+      <LastModifiedOn>2025-04-11T11:49:21.0534651+01:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
       <CreatedOn>2025-03-10T15:03:16.6109045+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>2025-04-10T15:26:45.0563944+01:00</LastModified>
+      <LastModified>2025-04-11T11:49:21.0534651+01:00</LastModified>
       <Notes />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
-      <Value>Return ValidateConvertSmoker(DC_Smoker2, DC_UniqueID, 2, DC_LifeBasis)</Value>
+      <Value>Return ValidateConvertSmoker(DC_Smoker2, DC_UniqueID, 2, LifeBasis())</Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
