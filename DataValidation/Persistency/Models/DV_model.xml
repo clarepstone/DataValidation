@@ -3,13 +3,14 @@
   <Name>DV_model</Name>
   <Parent />
   <Previous />
-  <LastModifiedBy>ClareStone</LastModifiedBy>
-  <LastModifiedOn>2025-04-11T14:37:00.3552677+01:00</LastModifiedOn>
+  <LastModifiedBy>AbdiAhmed</LastModifiedBy>
+  <LastModifiedOn>2026-04-23T12:25:48.1365657+01:00</LastModifiedOn>
   <CreatedBy>ClareStone</CreatedBy>
   <CreatedOn>2025-03-10T15:03:16.6109045+00:00</CreatedOn>
   <Folder>false</Folder>
-  <LastModified>2025-04-11T14:37:00.3552677+01:00</LastModified>
+  <LastModified>2026-04-23T12:25:48.1365657+01:00</LastModified>
   <Notes />
+  <OpeningInformation />
   <IsExpanded>true</IsExpanded>
   <Description>Model to validate the inputs used for valuation and pricing of conventional products</Description>
   <Inherit>false</Inherit>
@@ -28,6 +29,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6109045+00:00</LastModified>
       <Notes>Benefit LEVEL or DECR over lifetime of policy (DECR applicable to Product = TERM only)</Notes>
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>LEVEL</Value>
@@ -47,6 +49,7 @@
       <Folder>true</Folder>
       <LastModified>2025-03-10T15:03:16.6109045+00:00</LastModified>
       <Notes>Inputs related to benefits under policy</Notes>
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value />
@@ -66,6 +69,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6109045+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Date</DataType>
       <Value>23/08/1977</Value>
@@ -85,6 +89,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6119069+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Date</DataType>
       <Value>12/10/1965</Value>
@@ -104,6 +109,7 @@
       <Folder>true</Folder>
       <LastModified>2025-03-10T15:03:16.6119069+00:00</LastModified>
       <Notes>Death benefit inputs</Notes>
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value />
@@ -123,6 +129,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6121543+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>10000</Value>
@@ -142,6 +149,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6121543+00:00</LastModified>
       <Notes>Single life (S), Joint Life First Death (JLF). Joint Life Last Death (JLL)</Notes>
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>S</Value>
@@ -161,6 +169,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6121543+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>0</Value>
@@ -180,6 +189,7 @@
       <Folder>true</Folder>
       <LastModified>2025-03-10T15:03:16.6121543+00:00</LastModified>
       <Notes>Maturity benefit inputs</Notes>
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value />
@@ -199,6 +209,7 @@
       <Folder>false</Folder>
       <LastModified>2025-04-11T12:38:16.8356323+01:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>0</Value>
@@ -218,6 +229,7 @@
       <Folder>false</Folder>
       <LastModified>2025-04-11T12:28:01.5823671+01:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>0</Value>
@@ -237,6 +249,7 @@
       <Folder>false</Folder>
       <LastModified>2025-04-11T12:38:22.2032768+01:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>0</Value>
@@ -256,6 +269,7 @@
       <Folder>false</Folder>
       <LastModified>2025-04-11T12:28:07.2315033+01:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>1.00</Value>
@@ -275,6 +289,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6131597+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Date</DataType>
       <Value>31/12/2024</Value>
@@ -294,6 +309,7 @@
       <Folder>true</Folder>
       <LastModified>2025-03-10T15:03:16.6131597+00:00</LastModified>
       <Notes>Inputs specific to policy</Notes>
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value />
@@ -305,14 +321,15 @@
     <Input>
       <Name>PremAnn</Name>
       <Parent>Premium</Parent>
-      <Previous />
-      <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2025-03-10T15:03:16.6131597+00:00</LastModifiedOn>
+      <Previous>PremOrig</Previous>
+      <LastModifiedBy>AbdiAhmed</LastModifiedBy>
+      <LastModifiedOn>2026-04-23T12:25:48.1355653+01:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
       <CreatedOn>2025-03-10T15:03:16.6131597+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>2025-03-10T15:03:16.6131597+00:00</LastModified>
+      <LastModified>2026-04-23T12:25:48.1355653+01:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value>0</Value>
@@ -325,17 +342,38 @@
       <Name>PremFreq</Name>
       <Parent>Premium</Parent>
       <Previous>PremAnn</Previous>
-      <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2025-04-11T13:07:02.3411791+01:00</LastModifiedOn>
+      <LastModifiedBy>AbdiAhmed</LastModifiedBy>
+      <LastModifiedOn>2026-04-23T12:25:48.1345654+01:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
       <CreatedOn>2025-03-10T15:03:16.6131597+00:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>2025-04-11T13:07:02.3411791+01:00</LastModified>
+      <LastModified>2026-04-23T12:25:48.1345654+01:00</LastModified>
       <Notes>Number of premiums paid each year, 0=single premium, 1=annual, 2=half-yearly, 3=termly, 4=quarterly, 12=monthly</Notes>
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>0</Value>
       <Format />
+      <Override>false</Override>
+      <IsPrivate>false</IsPrivate>
+      <AllowNulls>false</AllowNulls>
+    </Input>
+    <Input>
+      <Name>PremOrig</Name>
+      <Parent>Premium</Parent>
+      <Previous />
+      <LastModifiedBy>AbdiAhmed</LastModifiedBy>
+      <LastModifiedOn>2026-04-23T12:25:48.1365657+01:00</LastModifiedOn>
+      <CreatedBy>AbdiAhmed</CreatedBy>
+      <CreatedOn>2026-04-23T12:24:49.6880623+01:00</CreatedOn>
+      <Folder>false</Folder>
+      <LastModified>2026-04-23T12:25:48.1365657+01:00</LastModified>
+      <Notes />
+      <OpeningInformation />
+      <IsExpanded>true</IsExpanded>
+      <DataType>Double</DataType>
+      <Value>0</Value>
+      <Format>#,##0.00</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
       <AllowNulls>false</AllowNulls>
@@ -351,6 +389,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6131597+00:00</LastModified>
       <Notes>Premium payment term in years.  (0 for single premiums, if premiums paid for whole term then set equal to Term, otherwise set to number of years premiums will be paid for).</Notes>
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>0</Value>
@@ -370,6 +409,7 @@
       <Folder>true</Folder>
       <LastModified>2025-03-10T15:03:16.6131597+00:00</LastModified>
       <Notes>Premium related inputs</Notes>
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value />
@@ -389,6 +429,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6131597+00:00</LastModified>
       <Notes>Product Type: Term insurance (TERM), Whole of life assurance (WOL), Pure Endowment (PURE_ENDOW), Endowment (ENDOW)</Notes>
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value />
@@ -408,6 +449,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6131597+00:00</LastModified>
       <Notes>Gender (M,F)</Notes>
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value />
@@ -427,6 +469,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6131597+00:00</LastModified>
       <Notes>Gender (M,F)</Notes>
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value />
@@ -446,6 +489,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6131597+00:00</LastModified>
       <Notes>Smoker status - Y (smoker), N (non-smoker), U (unknown)</Notes>
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value />
@@ -465,6 +509,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6142059+00:00</LastModified>
       <Notes>Smoker status - Y (smoker), N (non-smoker), U (unknown)</Notes>
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value />
@@ -484,6 +529,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6142059+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Date</DataType>
       <Value>01/01/2017</Value>
@@ -503,6 +549,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6142059+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value />
@@ -522,6 +569,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6142059+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value />
@@ -543,6 +591,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6142059+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Integer</DataType>
       <Value>70</Value>
@@ -563,6 +612,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6142059+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Integer</DataType>
       <Value>18</Value>
@@ -583,6 +633,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6147504+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>TableDbl</DataType>
       <Value>DC_Parameters</Value>
@@ -603,6 +654,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6147504+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>Value1</Value>
@@ -623,6 +675,7 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6147504+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Date</DataType>
       <Value>31/01/2025</Value>
@@ -645,12 +698,14 @@
       <Folder>true</Folder>
       <LastModified>2025-03-10T15:03:16.6147504+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value />
       <Format>#,##0.00</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_BenType</Name>
@@ -663,12 +718,14 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6147504+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>Return ValidateBenType(BenType, UniqueID, Product)</Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_DOB1</Name>
@@ -681,12 +738,14 @@
       <Folder>false</Folder>
       <LastModified>2025-04-11T14:30:51.3140151+01:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Date</DataType>
       <Value>Return ValidateDOB(DOB1, UniqueID, MinAge, MaxAge, ValDate, 1, LifeBasis, Sex1, Smoker1, MortAgeAdj1, MortMult1)</Value>
       <Format>dd/MM/yyyy</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_DOB2</Name>
@@ -699,12 +758,14 @@
       <Folder>false</Folder>
       <LastModified>2025-04-11T14:37:00.3552677+01:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Date</DataType>
       <Value>Return ValidateDOB(DOB2, UniqueID, MinAge, MaxAge, ValDate, 2, LifeBasis, Sex2, Smoker2, MortAgeAdj2, MortMult2)  </Value>
       <Format>dd/MM/yyyy</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_DthBen</Name>
@@ -717,12 +778,14 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6152913+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value>If DthBen &lt;&gt; "" Then Return val(DthBen)</Value>
       <Format>#,##0.00</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_LifeBasis</Name>
@@ -735,12 +798,14 @@
       <Folder>false</Folder>
       <LastModified>2025-04-11T13:02:22.127828+01:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>Return ValidateLifeBasis(LifeBasis, UniqueID, Sex2, DOB2, Smoker2, MortAgeAdj2, MortMult2)</Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_MatValue</Name>
@@ -753,12 +818,14 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6152913+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value>If MatValue &lt;&gt; "" Then Return val(MatValue)</Value>
       <Format>#,##0.00</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_MortAgeAdj1</Name>
@@ -771,12 +838,14 @@
       <Folder>false</Folder>
       <LastModified>2025-04-11T12:42:04.428326+01:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>Return MortAgeAdj1</Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_MortAgeAdj2</Name>
@@ -789,12 +858,14 @@
       <Folder>false</Folder>
       <LastModified>2025-04-11T12:42:21.5847947+01:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>If MortAgeAdj2 &lt;&gt; "" Then Return MortAgeAdj2</Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_MortMult1</Name>
@@ -807,12 +878,14 @@
       <Folder>false</Folder>
       <LastModified>2025-04-11T12:42:08.7017588+01:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>Return MortMult1</Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_MortMult2</Name>
@@ -825,12 +898,14 @@
       <Folder>false</Folder>
       <LastModified>2025-04-11T12:42:29.7299975+01:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>If MortMult2 &lt;&gt; "" Then Return MortMult2</Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_PUPDate</Name>
@@ -843,12 +918,14 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6152913+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Date</DataType>
       <Value>Return PUPDate</Value>
       <Format>dd/MM/yyyy</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_PremAnn</Name>
@@ -861,12 +938,14 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6152913+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value>Return PremAnn</Value>
       <Format>#,##0.00</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_PremFreq</Name>
@@ -879,12 +958,14 @@
       <Folder>false</Folder>
       <LastModified>2025-04-11T13:11:57.98064+01:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>Return ValidatePremFreq(PremFreq, UniqueID)</Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_PremTerm</Name>
@@ -897,12 +978,14 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.616337+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value>If PremTerm &lt;&gt; "" Then Return val(PremTerm)</Value>
       <Format>#,##0</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_Product</Name>
@@ -915,12 +998,14 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.616337+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>Return ValidateProduct(Product, UniqueID)</Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_Sex1</Name>
@@ -933,12 +1018,14 @@
       <Folder>false</Folder>
       <LastModified>2025-04-11T13:02:15.3450256+01:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>Return ValidateSex(Sex1, UniqueID, 1, LifeBasis, DOB1, Smoker1, MortAgeAdj1, MortMult1)</Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_Sex2</Name>
@@ -951,12 +1038,14 @@
       <Folder>false</Folder>
       <LastModified>2025-04-11T13:02:07.1403711+01:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>Return ValidateSex(Sex2, UniqueID, 2, LifeBasis, DOB2, Smoker2, MortAgeAdj2, MortMult2)</Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_Smoker1</Name>
@@ -969,6 +1058,7 @@
       <Folder>false</Folder>
       <LastModified>2025-04-11T12:07:44.0734835+01:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>Return ValidateSmoker(Smoker1, UniqueID, 1, LifeBasis, DOB1, Sex1, MortAgeAdj1, MortMult1)
@@ -976,6 +1066,7 @@
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_Smoker2</Name>
@@ -988,6 +1079,7 @@
       <Folder>false</Folder>
       <LastModified>2025-04-11T12:07:30.3796121+01:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>Return ValidateSmoker(Smoker2, UniqueID, 2, LifeBasis, DOB2, Sex2, MortAgeAdj2, MortMult2)
@@ -995,6 +1087,7 @@
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_StartDate</Name>
@@ -1007,12 +1100,14 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6168812+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Date</DataType>
       <Value>Return ValidateStartDate(StartDate, UniqueID, ValDate)</Value>
       <Format>dd/MM/yyyy</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_Term</Name>
@@ -1025,12 +1120,14 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6168812+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>Return Term</Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>DC_UniqueID</Name>
@@ -1043,12 +1140,14 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6168812+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>String</DataType>
       <Value>Return UniqueID</Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>Death</Name>
@@ -1061,12 +1160,14 @@
       <Folder>true</Folder>
       <LastModified>2025-03-10T15:03:16.6168812+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value />
       <Format>#,##0.00</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>Initialise</Name>
@@ -1079,12 +1180,14 @@
       <Folder>false</Folder>
       <LastModified>2025-03-10T15:03:16.6168812+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType />
       <Value>InputValidation.Log = Model.Log</Value>
       <Format />
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>Maturity</Name>
@@ -1097,12 +1200,14 @@
       <Folder>true</Folder>
       <LastModified>2025-03-10T15:03:16.617423+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value />
       <Format>#,##0.00</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>Policy</Name>
@@ -1115,12 +1220,14 @@
       <Folder>true</Folder>
       <LastModified>2025-03-10T15:03:16.617423+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value />
       <Format>#,##0.00</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>Policyholder1</Name>
@@ -1133,12 +1240,14 @@
       <Folder>true</Folder>
       <LastModified>2025-03-10T15:03:16.617423+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value />
       <Format>#,##0.00</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>Policyholder2</Name>
@@ -1151,12 +1260,14 @@
       <Folder>true</Folder>
       <LastModified>2025-03-10T15:03:16.617423+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value />
       <Format>#,##0.00</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
     <Formula>
       <Name>Premium</Name>
@@ -1169,12 +1280,14 @@
       <Folder>true</Folder>
       <LastModified>2025-03-10T15:03:16.617423+00:00</LastModified>
       <Notes />
+      <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
       <Value />
       <Format>#,##0.00</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
+      <IsUnitTest>false</IsUnitTest>
     </Formula>
   </Formulae>
   <Runs />
