@@ -4,11 +4,11 @@
   <Parent />
   <Previous>DV_model</Previous>
   <LastModifiedBy>ClareStone</LastModifiedBy>
-  <LastModifiedOn>2026-04-24T09:40:32.1605475+01:00</LastModifiedOn>
+  <LastModifiedOn>2026-04-28T11:17:40.2793916+01:00</LastModifiedOn>
   <CreatedBy>ClareStone</CreatedBy>
   <CreatedOn>2025-04-10T14:59:49.56182+01:00</CreatedOn>
   <Folder>false</Folder>
-  <LastModified>2026-04-24T09:40:32.1605475+01:00</LastModified>
+  <LastModified>2026-04-28T11:17:40.2793916+01:00</LastModified>
   <Notes />
   <OpeningInformation />
   <IsExpanded>true</IsExpanded>
@@ -232,16 +232,16 @@
       <Parent>Premium</Parent>
       <Previous />
       <LastModifiedBy>ClareStone</LastModifiedBy>
-      <LastModifiedOn>2026-04-24T09:40:32.1605475+01:00</LastModifiedOn>
+      <LastModifiedOn>2026-04-28T11:17:40.2793916+01:00</LastModifiedOn>
       <CreatedBy>ClareStone</CreatedBy>
       <CreatedOn>2026-04-24T09:39:59.4563701+01:00</CreatedOn>
       <Folder>false</Folder>
-      <LastModified>2026-04-24T09:40:32.1605475+01:00</LastModified>
+      <LastModified>2026-04-28T11:17:40.2793916+01:00</LastModified>
       <Notes>Original Premium at outset of policy</Notes>
       <OpeningInformation />
       <IsExpanded>true</IsExpanded>
       <DataType>Double</DataType>
-      <Value>0</Value>
+      <Value>1</Value>
       <Format>#,##0.00</Format>
       <Override>false</Override>
       <IsPrivate>false</IsPrivate>
